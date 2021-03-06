@@ -1,0 +1,3 @@
+mapreduce_api\WordCountMapper.class
+mapreduce_api\WordCountReducer.class
+mapreduce_api\JobMain.class

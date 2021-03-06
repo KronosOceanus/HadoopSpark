@@ -2,9 +2,17 @@
 /usr/local/hadoop/sbin/start-all.sh
 mapred --daemon start historyserver
 
+/usr/local/zookeeper/bin/zkServer.sh stop
+/usr/local/hadoop/sbin/stop-all.sh
+
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -write -nrFiles 10 -fileSize 10MB
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -clean
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.1.4.jar pi 2 10
 
 hdfs oiv -i /usr/local/hadoop/data/namenodeData/current/fsimage_0000000000000153 -p XML -o my_fsimage.xml
 hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
+
+hadoop jar mapreduce_api-1.0-SNAPSHOT.jar mapreduce_api.JobMain
+
+https://www.pianshen.com/article/65111062187/
+hadoop.dll 下载
