@@ -37,7 +37,8 @@ public class JobMain extends Configured implements Tool {
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
 
-        //暂时采用默认 shuffle
+        //规约
+        job.setCombinerClass(MyCombiner.class);
 
         // reduce 阶段使用类，以及 K3,V3 类型
         job.setReducerClass(WordCountReducer.class);

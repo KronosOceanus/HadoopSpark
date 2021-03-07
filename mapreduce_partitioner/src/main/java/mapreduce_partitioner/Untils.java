@@ -1,7 +1,13 @@
 package mapreduce_partitioner;
 
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+import org.junit.jupiter.api.Test;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
+import java.net.URI;
 import java.util.Random;
 
 public class Untils {
@@ -20,5 +26,17 @@ public class Untils {
         }
 
         out.close();
+    }
+
+    //将文件上传到 hdfs
+    @Test
+    public void putData() throws Exception{
+        FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"),
+                new Configuration());
+
+        fileSystem.copyFromLocalFile(new Path("part.txt"),
+                new Path("/partitioner/part.txt"));
+
+        fileSystem.close();
     }
 }

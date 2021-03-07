@@ -1,0 +1,5 @@
+mapreduce_partitioner\MyPartitioner.class
+mapreduce_partitioner\JobMain.class
+mapreduce_partitioner\PartitionerMapper.class
+mapreduce_partitioner\Untils.class
+mapreduce_partitioner\PartitionerReducer.class

@@ -3,21 +3,19 @@ package mapreduce_partitioner;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Counter;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class PartitionMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
+public class PartitionerMapper extends Mapper<LongWritable, Text, Text, NullWritable> {
 
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
-        Text text = new Text();
+        //计数器
+        Counter counter = context.getCounter("MR_COUNTER", "partitioner_counter");
+        counter.increment(1L);
 
-        String[] datas = value.toString().split("\t");
-        for (String num : datas){
-            text.set(num);
-
-            context.write(text, NullWritable.get());
-        }
+        context.write(value, NullWritable.get());
     }
 }
