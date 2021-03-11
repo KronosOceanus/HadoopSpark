@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ed55e9-68ce-4373-83e3-d7d1f1d044a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/mapreduce_sort.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SecondarySort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SortBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SortMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SortReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapreduce_api/src/main/java/mapreduce_api/WordCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_api/src/main/java/mapreduce_api/WordCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowCountReducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/Untils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mapreduce_partitioner.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mapreduce_partitioner.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/JobMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/JobMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/MyPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/MyPartitioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/PartitionerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/PartitionerMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/PartitionerReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/PartitionerReducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/Untils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/Untils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
