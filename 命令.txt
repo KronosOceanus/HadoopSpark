@@ -21,3 +21,4 @@ hadoop jar mapreduce_sort-1.0-SNAPSHOT.jar mapreduce_sort.SecondarySort
 https://www.pianshen.com/article/65111062187/
 hadoop.dll 下载
 jobhistory 无法使用
+datanode无法启动
