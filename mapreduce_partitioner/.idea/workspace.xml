@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ed55e9-68ce-4373-83e3-d7d1f1d044a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowCountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/FlowCountReducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/java/mapreduce_dataflow/Untils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_dataflow/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/src/main/java/untils/Untils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapreduce_combineinput/src/main/java/mapreduce_combineinput/JobMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_combineinput/src/main/java/mapreduce_combineinput/JobMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -130,6 +130,7 @@ public class HdfsAPITest {
 
 
 
+    //本地小文件合并上传
     @Test
     public void mergeFile() throws Exception{
         FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"),

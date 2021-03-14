@@ -5,7 +5,8 @@ mapred --daemon start historyserver
 /usr/local/zookeeper/bin/zkServer.sh stop
 /usr/local/hadoop/sbin/stop-all.sh
 mapred --daemon stop historyserver
-shutdown now
+
+/usr/local/zookeeper/bin/zkCli.sh -server node1:2181
 
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -write -nrFiles 10 -fileSize 10MB
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -clean
@@ -18,7 +19,9 @@ hadoop jar mapreduce_api-1.0-SNAPSHOT.jar mapreduce_api.JobMain
 hadoop jar mapreduce_partitioner-1.0-SNAPSHOT.jar mapreduce_partitioner.JobMain
 hadoop jar mapreduce_sort-1.0-SNAPSHOT.jar mapreduce_sort.SecondarySort
 
-https://www.pianshen.com/article/65111062187/
+hadoop源码编译
 hadoop.dll 下载
-jobhistory 无法使用
-datanode无法启动
+datanode 版本问题无法启动（即宕机和扩展问题）！删除所有node的hadoop.tmp.dir目录，重新format
+killed map！内存不够
+Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. //
+Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases

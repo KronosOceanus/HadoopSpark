@@ -26,11 +26,11 @@ public class JobMain extends Configured implements Tool {
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(BytesWritable.class);
 
-        //不用设置 Reducer，但是要设置数据类型
+        //不用设置 Reducer 类，但是要设置数据类型
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(BytesWritable.class);
 
-        //二进制文件，一般作为中间文件
+        //结果为二进制文件，一般作为中间文件
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
         Path path = new Path("hdfs://node1:8020/output/combineinput_out");
         FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"),
