@@ -15,11 +15,6 @@ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.
 hdfs oiv -i /usr/local/hadoop/data/namenodeData/current/fsimage_0000000000000153 -p XML -o my_fsimage.xml
 hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
 
-hadoop jar mapreduce_api-1.0-SNAPSHOT.jar mapreduce_api.JobMain
-hadoop jar mapreduce_partitioner-1.0-SNAPSHOT.jar mapreduce_partitioner.JobMain
-hadoop jar mapreduce_sort-1.0-SNAPSHOT.jar mapreduce_sort.SecondarySort
-
-hadoop源码编译
 hadoop.dll 下载
 datanode 版本问题无法启动（即宕机和扩展问题）！删除所有node的hadoop.tmp.dir目录，重新format
 killed map！内存不够
