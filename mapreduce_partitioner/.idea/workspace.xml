@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ed55e9-68ce-4373-83e3-d7d1f1d044a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/src/main/java/untils/Untils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mapreduce_topn/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mapreduce_combineinput/src/main/java/mapreduce_combineinput/JobMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_combineinput/src/main/java/mapreduce_combineinput/JobMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_api/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_api/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_sort/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapreduce_api/src/main/java/mapreduce_api/JobMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_api/src/main/java/mapreduce_api/JobMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapreduce_api/target/classes/mapreduce_api/JobMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_api/target/classes/mapreduce_api/JobMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/JobMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/JobMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/Untils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapreduce_partitioner/Untils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SecondarySort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_sort/src/main/java/mapreduce_sort/SecondarySort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mapreduce_sort/target/classes/mapreduce_sort/SecondarySort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_sort/target/classes/mapreduce_sort/SecondarySort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1pQCHSMjhJmheGEJRBftn80FZVH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

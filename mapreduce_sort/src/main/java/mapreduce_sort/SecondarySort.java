@@ -20,7 +20,7 @@ public class SecondarySort extends Configured implements Tool {
         Job job = Job.getInstance(super.getConf());
 
         job.setInputFormatClass(TextInputFormat.class);
-        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/sort"));
+        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/input/sort"));
 
         job.setMapperClass(SortMapper.class);
         job.setMapOutputKeyClass(SortBean.class);
@@ -31,7 +31,7 @@ public class SecondarySort extends Configured implements Tool {
         job.setOutputValueClass(NullWritable.class);
 
         job.setOutputFormatClass(TextOutputFormat.class);
-        Path path = new Path("hdfs://node1:8020/sort_out");
+        Path path = new Path("hdfs://node1:8020/output/sort_out");
         FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"), new Configuration());
         boolean exists = fileSystem.exists(path);
         if (exists){

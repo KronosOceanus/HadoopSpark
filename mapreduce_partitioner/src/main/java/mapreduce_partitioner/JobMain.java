@@ -21,7 +21,7 @@ public class JobMain extends Configured implements Tool {
         Job job = Job.getInstance(super.getConf(), "partition_mapreduce");
 
         job.setInputFormatClass(TextInputFormat.class);
-        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/partitioner"));
+        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/input/partitioner"));
 
         job.setMapperClass(PartitionerMapper.class);
         job.setMapOutputKeyClass(Text.class);
@@ -39,7 +39,7 @@ public class JobMain extends Configured implements Tool {
         //输出路径
         FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"),
                 new Configuration());
-        Path path = new Path("hdfs://node1:8020/partitioner_out");
+        Path path = new Path("hdfs://node1:8020/output/partitioner_out");
         boolean exists = fileSystem.exists(path);
         if (exists) {
             fileSystem.delete(path, true);

@@ -35,7 +35,7 @@ public class Untils {
                 new Configuration());
 
         fileSystem.copyFromLocalFile(new Path("part.txt"),
-                new Path("/partitioner/part.txt"));
+                new Path("/input/partitioner/part.txt"));
 
         fileSystem.close();
     }

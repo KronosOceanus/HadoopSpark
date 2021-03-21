@@ -28,7 +28,7 @@ public class JobMain extends Configured implements Tool {
         //配置 job 任务
         //输入类型，文件路径
         job.setInputFormatClass(TextInputFormat.class);
-        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/wordcount"));
+        TextInputFormat.addInputPath(job, new Path("hdfs://node1:8020/input/wordcount"));
         //本地运行则改为如下路径
 //        TextInputFormat.addInputPath(job,
 //                new Path("C:\\MyProject\\HadoopSpark\\mapreduce_data\\input"));
@@ -46,7 +46,7 @@ public class JobMain extends Configured implements Tool {
         job.setOutputValueClass(LongWritable.class);
         //输出类型，文件路径（这个路径不能存在，如果存在要先删除）
         job.setOutputFormatClass(TextOutputFormat.class);
-        Path path = new Path("hdfs://node1:8020/wordcount_out");
+        Path path = new Path("hdfs://node1:8020/output/wordcount_out");
         //改进，如果目录存在则删掉
         FileSystem fileSystem = FileSystem.get(new URI("hdfs://node1:8020"),
                 new Configuration());
