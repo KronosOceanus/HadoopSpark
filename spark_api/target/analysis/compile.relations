@@ -1,0 +1,20 @@
+products:
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\MyProject\HadoopSpark\spark_api\target\classes\scala_wordcount\WordCount$.class
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\MyProject\HadoopSpark\spark_api\target\classes\scala_wordcount\WordCount.class
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> C:\MyProject\HadoopSpark\spark_api\target\classes\scala_wordcount\WordCount_bak$.class
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> C:\MyProject\HadoopSpark\spark_api\target\classes\scala_wordcount\WordCount_bak.class
+binary dependencies:
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\MySoftware\jdk\jre\lib\rt.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\Users\KronosOceanus\.m2\repository\org\apache\hadoop\hadoop-common\2.7.4\hadoop-common-2.7.4.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\Users\KronosOceanus\.m2\repository\org\apache\spark\spark-core_2.12\3.0.2\spark-core_2.12-3.0.2.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> C:\Users\KronosOceanus\.m2\repository\org\scala-lang\scala-library\2.12.12\scala-library-2.12.12.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> C:\MySoftware\jdk\jre\lib\rt.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> C:\Users\KronosOceanus\.m2\repository\org\apache\spark\spark-core_2.12\3.0.2\spark-core_2.12-3.0.2.jar
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> C:\Users\KronosOceanus\.m2\repository\org\scala-lang\scala-library\2.12.12\scala-library-2.12.12.jar
+source dependencies:
+external dependencies:
+class names:
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> scala_wordcount.WordCount
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount.scala -> scala_wordcount.WordCount$
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> scala_wordcount.WordCount_bak
+   C:\MyProject\HadoopSpark\spark_api\src\main\scala\scala_wordcount\WordCount_bak.scala -> scala_wordcount.WordCount_bak$

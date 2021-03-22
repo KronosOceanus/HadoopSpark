@@ -116,5 +116,6 @@ public class ZookeeperAPITest {
         //开始监听
         treeCache.start();
         Thread.sleep(100000);
+        client.close();
     }
 }

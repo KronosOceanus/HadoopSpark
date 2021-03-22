@@ -19,8 +19,10 @@ hadoop.dll 下载
 killed map！内存不够
 Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. //
 Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases
-sparkalone-ha
+sparkalone-ha 搭建
 mapred --daemon start historyserver
+spark pom 依赖
+idea 远程提交
 
 
 
@@ -28,6 +30,7 @@ mapred --daemon start historyserver
 /usr/local/spark/sbin/start-history-server.sh
 /usr/local/spark/bin/spark-shell --master spark://node1:7077
 /usr/local/spark/sbin/stop-all.sh
+/usr/local/spark/sbin/stop-history-server.sh
 
 val textFile = sc.textFile("hdfs://node1:8020/input/wordcount/wordcount.txt")
 val counts = textFile.flatMap(line => line.split(","))
@@ -44,3 +47,4 @@ val count = sc.parallelize(1 to NUM_SAMPLES).filter { _ =>
 println(s"Pi is roughly ${4.0 * count / NUM_SAMPLES}")
 
 /usr/local/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class org.apache.spark.examples.SparkPi /usr/local/spark/examples/jars/spark-examples_2.12-3.0.2.jar 10
+/usr/local/spark/bin/spark-submit --master yarn --deploy-mode cluster --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class spark_wordcount.WordCount /root/jar_test/spark_api-1.0-SNAPSHOT.jar hdfs://node1:8020/input/wordcount/wordcount.txt hdfs://node1:8020/output/wordcount_out3
