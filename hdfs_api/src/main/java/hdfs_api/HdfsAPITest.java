@@ -15,6 +15,7 @@ public class HdfsAPITest {
 
     @Test
     public void visitByUrl() throws Exception{
+        //设置 url 访问
         URL.setURLStreamHandlerFactory(new FsUrlStreamHandlerFactory());
 
         InputStream inputStream = new URL("hdfs://node1:8020/a.txt").openStream();

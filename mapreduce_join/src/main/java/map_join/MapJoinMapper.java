@@ -43,7 +43,7 @@ public class MapJoinMapper extends Mapper<LongWritable, Text, Text, Text> {
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] datas = value.toString().split(",");
-        String productId = datas[2];
+        String productId = datas[2];    //大表的 productId
         //商品表数据
         String productValue = localMap.get(productId);
         //拼接

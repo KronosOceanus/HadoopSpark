@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62ed55e9-68ce-4373-83e3-d7d1f1d044a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mapreduce_api/pic_note/1-WordCount案例-编程刘成刚.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic_note/2-Shuffle阶段-分区.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hdfs_api/pic_note/1-HDFS概念.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/../mapreduce_api/pic_note/2-规约概念.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hdfs_api/pic_note/1-hdfs和Mapreduce思想.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hdfs_api/src/main/java/hdfs_api/HdfsAPITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../hdfs_api/src/main/java/hdfs_api/HdfsAPITest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +33,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1pQCHSMjhJmheGEJRBftn80FZVH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,6 +44,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pic_note" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProject\HadoopSpark\mapreduce_partitioner\pic_note" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.JobMain">
     <configuration name="JobMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

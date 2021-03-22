@@ -8,6 +8,7 @@ import java.io.IOException;
 
 public class Step1Mapper extends Mapper<LongWritable, Text, Text, Text> {
 
+    //互换 KV，平铺
     @Override
     protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         Text text = new Text();

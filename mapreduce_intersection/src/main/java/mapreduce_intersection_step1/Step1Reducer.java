@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class Step1Reducer extends Reducer<Text, Text, Text, Text> {
 
+    // - 连接 V
     @Override
     protected void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
         String key3 = "";

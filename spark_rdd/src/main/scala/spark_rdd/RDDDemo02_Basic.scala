@@ -14,7 +14,8 @@ object RDDDemo02_Basic {
     val lines: RDD[String] = sc.textFile("input/wordcount.txt")
     val result: RDD[(String, Int)] = lines.filter(StringUtils.isNotBlank).
       flatMap(_.split(",")).
-      map((_,1)).reduceByKey(_+_)
+      map((_,1)). //作用在每条数据上，每条数据都开启一个连接
+      reduceByKey(_+_)
 
     // Action
     result.foreach(println)
