@@ -15,7 +15,7 @@ import org.apache.hadoop.util.ToolRunner;
 import java.net.URI;
 
 /**
- * 求每个订单 topN 金额的商品对应的订单项
+ * 求每个订单（根据 orderId 区分是否是同一个订单） topN 金额的商品对应的订单项（没有求和）
  */
 public class JobMain extends Configured implements Tool {
 

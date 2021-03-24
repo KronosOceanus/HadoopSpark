@@ -27,6 +27,7 @@ public class MyRecordWriter extends RecordWriter<Text, NullWritable> {
     public void write(Text text, NullWritable nullWritable) throws IOException, InterruptedException {
         String key = text.toString();
         int numKey = Integer.parseInt(key);
+        //文件夹分区条件
         if (numKey > 1){
             outputStream1.write(key.getBytes(StandardCharsets.UTF_8));
             outputStream1.write("\r\n".getBytes(StandardCharsets.UTF_8));

@@ -18,11 +18,11 @@ public class MyOutputFormat extends FileOutputFormat<Text, NullWritable> {
         //获取目标文件输出流（两个）
         Path path1 = new Path("hdfs://node1:8020/output/left_out.txt");
         Path path2 = new Path("hdfs://node1:8020/output/right_out.txt");
+        //通过上下文获取配置
         FileSystem fileSystem = path1.getFileSystem(taskAttemptContext.getConfiguration());
         FSDataOutputStream outputStream1 = fileSystem.create(path1);
         FSDataOutputStream outputStream2 = fileSystem.create(path2);
 
-        MyRecordWriter myRecordWriter = new MyRecordWriter(outputStream1, outputStream2);
-        return myRecordWriter;
+        return new MyRecordWriter(outputStream1, outputStream2);
     }
 }

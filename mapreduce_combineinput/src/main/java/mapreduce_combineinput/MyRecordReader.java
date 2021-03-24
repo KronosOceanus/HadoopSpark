@@ -16,13 +16,14 @@ import java.io.IOException;
 
 public class MyRecordReader extends RecordReader<NullWritable, BytesWritable> {
 
-    //文件切片，文件系统配置，文件是否读取完毕，文件字节数组，文件系统，文件输入流
+    //单个文件，文件系统，文件系统配置，文件输入流，文件是否读取完毕
     private FileSplit fileSplit = null;
-    private Configuration configuration = null;
-    private boolean processed = false;
-    private BytesWritable bytesWritable = null;
     private FileSystem fileSystem = null;
+    private Configuration configuration = null;
     private FSDataInputStream inputStream = null;
+    private boolean processed = false;
+    // V1 文件字节数组
+    private BytesWritable bytesWritable = null;
 
     //初始化
     @Override
@@ -43,7 +44,7 @@ public class MyRecordReader extends RecordReader<NullWritable, BytesWritable> {
             inputStream = fileSystem.open(path);
             //文件放入字节数组
             byte[] bytes = new byte[(int) fileSplit.getLength()];
-            //输入流，字节数组，偏移量，读取长度
+            //（输入流，字节数组，偏移量，读取长度）
             IOUtils.readFully(inputStream, bytes, 0, (int) fileSplit.getLength());
 
             //字节数组封装成 hadoop 中的格式

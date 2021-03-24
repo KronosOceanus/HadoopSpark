@@ -13,6 +13,9 @@ import org.apache.hadoop.util.ToolRunner;
 
 import java.net.URI;
 
+/**
+ * 小文件合并
+ */
 public class JobMain extends Configured implements Tool {
 
     @Override

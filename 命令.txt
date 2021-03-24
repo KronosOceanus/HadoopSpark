@@ -24,6 +24,10 @@ mapred --daemon start historyserver
 spark pom 依赖
 idea 远程提交
 
+尚硅谷大数据全套视频教程
+下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
+提取码：9bnr
+
 
 
 /usr/local/spark/sbin/start-all.sh
@@ -48,3 +52,29 @@ println(s"Pi is roughly ${4.0 * count / NUM_SAMPLES}")
 
 /usr/local/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class org.apache.spark.examples.SparkPi /usr/local/spark/examples/jars/spark-examples_2.12-3.0.2.jar 10
 /usr/local/spark/bin/spark-submit --master yarn --deploy-mode cluster --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class spark_wordcount.WordCount /root/jar_test/spark_api-1.0-SNAPSHOT.jar hdfs://node1:8020/input/wordcount/wordcount.txt hdfs://node1:8020/output/wordcount_out3
+
+
+
+
+/usr/local/flume/bin/flume-ng agent --conf /usr/local/flume/conf --conf-file /usr/local/flume/job/netcat-flume-logger.conf --name a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/netcat-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/file-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/file-flume-hdfs.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/dir-flume-hdfs.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/files-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
+group1（a2,node1）（a3,node2）（a1,node3）
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume1.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume2.conf -n a2
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume3.conf -n a3
+group2（a2,node1）（a3,node2）（a1,node3）
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group2/flume1.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group2/flume2.conf -n a2 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group2/flume3.conf -n a3 -Dflume.root.logger=INFO,console
+group3（a2,node1）（a3,node2）（a1,node3）
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group3/flume1.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group3/flume2.conf -n a2 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group3/flume3.conf -n a3 -Dflume.root.logger=INFO,console
+group4（a2,node1）（a3,node2）（a1,node3）
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume1.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume2.conf -n a2
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume3.conf -n a3 -Dflume.root.logger=INFO,console

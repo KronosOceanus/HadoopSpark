@@ -15,6 +15,7 @@ import java.net.URI;
 
 /**
  * 相当于可以写在不同文件夹的分区
+ * 与分区不同的地方就是，可以写在不同的文件夹下
  */
 public class JobMain extends Configured implements Tool {
 

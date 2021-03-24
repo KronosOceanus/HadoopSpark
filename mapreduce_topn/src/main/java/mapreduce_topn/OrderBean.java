@@ -13,6 +13,7 @@ public class OrderBean implements WritableComparable<OrderBean> {
 
     @Override
     public int compareTo(OrderBean o) {
+        //二次排序
         //如果 orderId 一致，则按照 price 降序排序
         int i = this.orderId.compareTo(o.orderId);
         if (i == 0){
