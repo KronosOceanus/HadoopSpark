@@ -78,3 +78,16 @@ group4（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume1.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume2.conf -n a2
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume3.conf -n a3 -Dflume.root.logger=INFO,console
+
+
+
+
+/usr/local/kafka/bin/kafka-server-start.sh -daemon /usr/local/kafka/config/server.properties
+/usr/local/kafka/bin/kafka-server-stop.sh /usr/local/kafka/config/server.properties
+/usr/local/kafka/bin/kafka-topics.sh --list --zookeeper node1:2181
+/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper node1:2181 --topic first --partitions 2 --replication-factor 2
+/usr/local/kafka/bin/kafka-topics.sh --delete --zookeeper node1:2181 --topic first
+/usr/local/kafka/bin/kafka-topics.sh --describe --zookeeper node1:2181 --topic second
+/usr/local/kafka/bin/kafka-console-producer.sh --topic first --broker-list node1:9092
+/usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092
+/usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092 --from-beginning
