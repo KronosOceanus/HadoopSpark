@@ -91,3 +91,8 @@ group4（a2,node1）（a3,node2）（a1,node3）
 /usr/local/kafka/bin/kafka-console-producer.sh --topic first --broker-list node1:9092
 /usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092
 /usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092 --from-beginning
+/usr/local/kafka/bin/kafka-console-consumer.sh --topic __consumer_offsets --bootstrap-server node1:9092 --formatter "kafka.coordinator.group.GroupMetadataManager\$OffsetsMessageFormatter" --consumer.config /usr/local/kafka/config/consumer.properties --from-beginning
+
+
+
+/usr/local/sqoop/bin/sqoop list-databases --connect jdbc:mysql://localhost:3306/ --username root --password java521....
