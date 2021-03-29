@@ -23,6 +23,7 @@ sparkalone-ha 搭建
 mapred --daemon start historyserver
 spark pom 依赖
 idea 远程提交
+kafka eagle
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
@@ -78,8 +79,12 @@ group4（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume1.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume2.conf -n a2
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group4/flume3.conf -n a3 -Dflume.root.logger=INFO,console
-
-
+group5（a2,node1）（a3,node2）（a1,node3）
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group5/flume1.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group5/flume2.conf -n a2 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group5/flume3.conf -n a3 -Dflume.root.logger=INFO,console
+flume + kafka
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/flume-kafka.conf -n a1
 
 
 /usr/local/kafka/bin/kafka-server-start.sh -daemon /usr/local/kafka/config/server.properties
@@ -89,7 +94,7 @@ group4（a2,node1）（a3,node2）（a1,node3）
 /usr/local/kafka/bin/kafka-topics.sh --delete --zookeeper node1:2181 --topic first
 /usr/local/kafka/bin/kafka-topics.sh --describe --zookeeper node1:2181 --topic second
 /usr/local/kafka/bin/kafka-console-producer.sh --topic first --broker-list node1:9092
-/usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092
+/usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092 --consumer.config /usr/local/kafka/config/consumer.properties
 /usr/local/kafka/bin/kafka-console-consumer.sh --topic first --bootstrap-server node1:9092 --from-beginning
 /usr/local/kafka/bin/kafka-console-consumer.sh --topic __consumer_offsets --bootstrap-server node1:9092 --formatter "kafka.coordinator.group.GroupMetadataManager\$OffsetsMessageFormatter" --consumer.config /usr/local/kafka/config/consumer.properties --from-beginning
 

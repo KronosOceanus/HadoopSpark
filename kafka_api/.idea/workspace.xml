@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="70950b52-fa09-4415-be66-dad3aea27b91" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_interceptor/CounterInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_interceptor/TimeInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_partitioner/MyPartitioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/CallBackProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/InterceptorProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/PartitionerProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafka_producer/MyProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/MyProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kafka_producer/MyProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kafka_producer/MyProducer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qLA5ATIPEzNsM4EAQyquTlxNTx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/kafka_producer" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProject\HadoopSpark\kafka_api\src\main\java\kafka_producer" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyProject\HadoopSpark\kafka_api\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.InterceptorProducer">
+    <configuration name="AsyncCommitConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka_consumer.AsyncCommitConsumer" />
+      <module name="kafka_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka_consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InterceptorProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka_producer.InterceptorProducer" />
+      <module name="kafka_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka_producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka_consumer.MyConsumer" />
+      <module name="kafka_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka_consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka_producer.MyProducer" />
+      <module name="kafka_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka_producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PartitionerProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kafka_producer.PartitionerProducer" />
+      <module name="kafka_api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kafka_producer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InterceptorProducer" />
+        <item itemvalue="Application.AsyncCommitConsumer" />
+        <item itemvalue="Application.MyConsumer" />
+        <item itemvalue="Application.MyProducer" />
+        <item itemvalue="Application.PartitionerProducer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70950b52-fa09-4415-be66-dad3aea27b91" name="Default Changelist" comment="" />
+      <created>1616848311244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616848311244</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
