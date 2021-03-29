@@ -13,7 +13,7 @@ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.
 hdfs oiv -i /usr/local/hadoop/data/namenodeData/current/fsimage_0000000000000153 -p XML -o my_fsimage.xml
 hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
 
-
+ 
 
 hadoop.dll 下载
 killed map！内存不够
@@ -24,6 +24,7 @@ mapred --daemon start historyserver
 spark pom 依赖
 idea 远程提交
 kafka eagle
+kafka 自定义提交 offset
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
@@ -63,6 +64,8 @@ println(s"Pi is roughly ${4.0 * count / NUM_SAMPLES}")
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/file-flume-hdfs.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/dir-flume-hdfs.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/files-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysource.conf -n a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysink.conf -n a1
 group1（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume1.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume2.conf -n a2
@@ -85,6 +88,8 @@ group5（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group5/flume3.conf -n a3 -Dflume.root.logger=INFO,console
 flume + kafka
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/flume-kafka.conf -n a1
+
+
 
 
 /usr/local/kafka/bin/kafka-server-start.sh -daemon /usr/local/kafka/config/server.properties

@@ -1,0 +1,4 @@
+flume_interceptor\TypeInterceptor$Builder.class
+flume_sink\MySink.class
+flume_interceptor\TypeInterceptor.class
+flume_source\MySource.class
