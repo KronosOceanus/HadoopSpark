@@ -65,7 +65,8 @@ println(s"Pi is roughly ${4.0 * count / NUM_SAMPLES}")
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/dir-flume-hdfs.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/files-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysource.conf -n a1 -Dflume.root.logger=INFO,console
-/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysink.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysink.conf -n a1 -Dflume.root.logger=INFO,console
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/netcat-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console -Dflume.monitoring.type=ganglia -Dflume.monitoring.hosts=node1:8649
 group1（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume1.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group1/flume2.conf -n a2
@@ -88,6 +89,7 @@ group5（a2,node1）（a3,node2）（a1,node3）
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/group5/flume3.conf -n a3 -Dflume.root.logger=INFO,console
 flume + kafka
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/flume-kafka.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/type-kafka.conf -n a1
 
 
 
@@ -106,3 +108,19 @@ flume + kafka
 
 
 /usr/local/sqoop/bin/sqoop list-databases --connect jdbc:mysql://localhost:3306/ --username root --password java521....
+
+
+
+/usr/local/hbase/bin/hbase-daemon.sh start master
+/usr/local/hbase/bin/hbase-daemon.sh start regionserver
+/usr/local/hbase/bin/hbase-daemon.sh stop master
+/usr/local/hbase/bin/hbase-daemon.sh stop regionserver
+/usr/local/hbase/bin/start-hbase.sh
+/usr/local/hbase/bin/stop-hbase.sh
+/usr/local/hbase/bin/hbase shell
+/usr/local/hbase/bin/hbase org.apache.hadoop.hbase.io.hfile.HFile -a -b -e -k -p -f /hbase/data/default/person/498cbea2ddaf97f68c5d92ed9449cbf0/info/a8813e7736b7487ca21c5f0e841674b0
+/usr/local/hbase/bin/hbase mapredcp
+/usr/local/hadoop/bin/yarn jar /usr/local/hbase/lib/hbase-server-2.2.6.jar org.apache.hadoop.hbase.mapreduce.RowCounter student
+/usr/local/hadoop/bin/yarn jar /usr/local/hbase/lib/hbase-server-2.2.6.jar org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=HBASE_ROW_KEY,info:name,info:color fruit hdfs://node1:8020/input/hbasemr/fruit.csv
+/usr/local/hadoop/bin/yarn jar /root/jar_test/hbase_mapred-1.0-SNAPSHOT.jar hbase_mapred_1.JobMain
+/usr/local/hadoop/bin/yarn jar /root/jar_test/hbase_mapred-1.0-SNAPSHOT.jar hbase_mapred_2.JobMain

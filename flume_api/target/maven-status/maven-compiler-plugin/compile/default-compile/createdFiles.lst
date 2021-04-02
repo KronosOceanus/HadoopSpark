@@ -1,4 +1,6 @@
 flume_interceptor\TypeInterceptor$Builder.class
+flume_interceptor\KafkaTypeInterceptor$Builder.class
 flume_sink\MySink.class
 flume_interceptor\TypeInterceptor.class
 flume_source\MySource.class
+flume_interceptor\KafkaTypeInterceptor.class

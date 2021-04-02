@@ -9,10 +9,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 在配置文件中指定
- * 拦截器 +  headers + 静态内部类 Builder
+ * 发送到不同的 topic
  */
-public class TypeInterceptor implements Interceptor {
+public class KafkaTypeInterceptor implements Interceptor {
 
     //存放事件
     private List<Event> addHeaderEvents;
@@ -30,10 +29,10 @@ public class TypeInterceptor implements Interceptor {
         String body = new String(event.getBody());
         //添加头信息
         if (body.contains("hello")){
-            //自定义，和配置文件关联，根据 headers 不同发往不同的 channel
-            headers.put("type", "kronos");
+            //如果要发往 kafka 不同主题，则这里 headers 必须是 （topic，主题名）
+            headers.put("topic", "first");
         }else {
-            headers.put("type", "oceanus");
+            headers.put("topic", "second");
         }
         return event;
     }
@@ -60,7 +59,7 @@ public class TypeInterceptor implements Interceptor {
         //构造拦截器
         @Override
         public Interceptor build() {
-            return new TypeInterceptor();
+            return new KafkaTypeInterceptor();
         }
 
         @Override
