@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2110330-03a2-46f0-a236-b78b6bffebaa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/flume_interceptor/KafkaTypeInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Reducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/JobMain2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/flume_interceptor/TypeInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/flume_interceptor/TypeInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/flume_api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/flume_api-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

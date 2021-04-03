@@ -1,3 +1,6 @@
-hbase_mapred_1\FruitReducer.class
 hbase_mapred_1\FruitMapper.class
+hbase_mapred_2\Fruit2Reducer.class
 hbase_mapred_1\JobMain.class
+hbase_mapred_1\FruitReducer.class
+hbase_mapred_2\Fruit2Mapper.class
+hbase_mapred_2\JobMain2.class

@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70950b52-fa09-4415-be66-dad3aea27b91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_interceptor/CounterInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_interceptor/TimeInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_partitioner/MyPartitioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/CallBackProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/InterceptorProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/PartitionerProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kafka_producer/MyProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafka_producer/MyProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kafka_producer/MyProducer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kafka_producer/MyProducer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Reducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/JobMain2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flume_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flume_api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,9 +136,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.InterceptorProducer" />
-        <item itemvalue="Application.AsyncCommitConsumer" />
         <item itemvalue="Application.MyConsumer" />
         <item itemvalue="Application.MyProducer" />
+        <item itemvalue="Application.AsyncCommitConsumer" />
         <item itemvalue="Application.PartitionerProducer" />
       </list>
     </recent_temporary>

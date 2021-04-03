@@ -1,0 +1,4 @@
+hello,world,hadoop
+hive,sqoop,flume,hello
+kitty,tom,jerry,hello
+hadoop
