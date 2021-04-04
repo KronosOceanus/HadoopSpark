@@ -5,16 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70950b52-fa09-4415-be66-dad3aea27b91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hbase_mapred/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/Fruit2Reducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_mapred/src/main/java/hbase_mapred_2/JobMain2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flume_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flume_api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/classes/hbase_mapred_1/JobMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/hbase_mapred-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../hbase_mapred/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount04.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount05.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount06.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/spark_streaming_kafka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo01.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafka_consumer/AsyncCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

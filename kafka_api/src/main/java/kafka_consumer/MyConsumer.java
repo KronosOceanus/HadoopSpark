@@ -35,7 +35,7 @@ public class MyConsumer {
         consumer.subscribe(Arrays.asList("first", "second"));   //订阅主题
 
         while (true){
-            ConsumerRecords<String, String> consumerRecords = consumer.poll(100); //批量拉去（时间间隔）
+            ConsumerRecords<String, String> consumerRecords = consumer.poll(100); //批量拉取（时间间隔）
             for (ConsumerRecord<String, String> consumerRecord : consumerRecords) {
                 System.out.println(consumerRecord.key() + "----" +
                         consumerRecord.value());

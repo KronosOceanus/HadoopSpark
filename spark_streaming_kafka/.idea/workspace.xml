@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0453db52-e1c6-4537-b66b-fc8a9370a018" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/spark_sql.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount04.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount05.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount06.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spark_streaming_kafka.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka_mysql_utils/KafkaOffsetUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo01.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo02.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo03.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qgrYlrhaqaENau7oCCfnCY4pMk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="spark_streaming_kafka" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.SparkStreaming_Kafka_Demo03">
+    <configuration name="SparkStreaming_Kafka_Demo01" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_streaming_kafka.SparkStreaming_Kafka_Demo01" />
+      <module name="spark_streaming_kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_streaming_kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkStreaming_Kafka_Demo02" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_streaming_kafka.SparkStreaming_Kafka_Demo02" />
+      <module name="spark_streaming_kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_streaming_kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SparkStreaming_Kafka_Demo03" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_streaming_kafka.SparkStreaming_Kafka_Demo03" />
+      <module name="spark_streaming_kafka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_streaming_kafka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SparkStreaming_Kafka_Demo03" />
+        <item itemvalue="Application.SparkStreaming_Kafka_Demo02" />
+        <item itemvalue="Application.SparkStreaming_Kafka_Demo01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0453db52-e1c6-4537-b66b-fc8a9370a018" name="Default Changelist" comment="" />
+      <created>1617512124703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617512124703</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
