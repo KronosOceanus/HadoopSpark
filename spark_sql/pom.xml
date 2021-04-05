@@ -21,7 +21,6 @@
 
 
 
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.scala-lang/scala-library -->
         <dependency>
@@ -37,18 +36,24 @@
             <version>${spark.version}</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming_2.12</artifactId>
+            <artifactId>spark-hive_2.12</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_2.12</artifactId>
             <version>${spark.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-kafka-0-10 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive-thriftserver -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-streaming-kafka-0-10_2.12</artifactId>
+            <artifactId>spark-hive-thriftserver_2.12</artifactId>
             <version>${spark.version}</version>
         </dependency>
 

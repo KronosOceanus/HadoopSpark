@@ -5,39 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bef3070-3d5a-4d6a-8e71-5e009bcfbac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_sql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount04.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount05.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount06.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/spark_streaming_kafka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/src/main/scala/kafka_mysql_utils/KafkaOffsetUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming_kafka/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo03.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/person.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/wordcount.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo05_Query.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo06_WordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo07_MovieTopN.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo01_Data.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo02_RDD_DF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo03_RDD_DF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo04_RDD_DF_DS.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/utils/Utils.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_rdd_high/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_rdd_high/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +36,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -62,6 +57,90 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javaSE/Buffer的使用（NIO）" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MyProject\HadoopSpark\spark_sql\input" />
+      <recent name="C:\MyProject\HadoopSpark\spark_sql" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Demo07_MovieTopN">
+    <configuration name="DataUtils" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="utils.Utils" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo01_Data" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql_type.Demo01_Data" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_sql_type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo05_Query" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo05_Query" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo06_WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo06_WordCount" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo07_MovieTopN" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo07_MovieTopN" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Demo07_MovieTopN" />
+        <item itemvalue="Application.DataUtils" />
+        <item itemvalue="Application.Demo01_Data" />
+        <item itemvalue="Application.Demo06_WordCount" />
+        <item itemvalue="Application.Demo05_Query" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,5 +163,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

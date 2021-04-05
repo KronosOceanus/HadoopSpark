@@ -5,39 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0453db52-e1c6-4537-b66b-fc8a9370a018" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_sql/spark_sql.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount04.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount05.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spark_streaming/src/main/scala/spark_windows/WordCount06.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spark_streaming_kafka.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/kafka_mysql_utils/KafkaOffsetUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo01.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo02.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_streaming_kafka/SparkStreaming_Kafka_Demo03.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/AsyncCommitConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyCommitConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/src/main/java/kafka_consumer/MyConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming/target/classes/spark_streaming/WordCount03$.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/input/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/input/data.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/input/person.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/input/wordcount.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql/Demo05_Query.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql/Demo06_WordCount.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql_type/Demo01_Data.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql_type/Demo02_RDD_DF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql_type/Demo03_RDD_DF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_sql/src/main/scala/spark_sql_type/Demo04_RDD_DF_DS.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_sql/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_sql/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_sql/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_sql/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
