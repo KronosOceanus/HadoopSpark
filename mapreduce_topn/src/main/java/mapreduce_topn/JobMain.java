@@ -34,7 +34,7 @@ public class JobMain extends Configured implements Tool {
         job.setPartitionerClass(OrderPartitioner.class);
         //不设置 reduceTask 数则都输入到同一个文件
 
-        //分组
+        //分组（当分区字段和排序字段不是同一个字段时）
         job.setGroupingComparatorClass(GroupComparator.class);
 
         job.setReducerClass(GroupReducer.class);

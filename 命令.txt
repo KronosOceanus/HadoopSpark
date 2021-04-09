@@ -1,8 +1,10 @@
 /usr/local/zookeeper/bin/zkServer.sh start
 /usr/local/hadoop/sbin/start-all.sh
+mapred --daemon start historyserver
 
 /usr/local/zookeeper/bin/zkServer.sh stop
 /usr/local/hadoop/sbin/stop-all.sh
+mapred --daemon stop historyserver
 
 /usr/local/zookeeper/bin/zkCli.sh -server node1:2181
 
@@ -25,6 +27,7 @@ spark pom 依赖
 idea 远程提交
 kafka eagle
 kafka 自定义提交 offset
+tez
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
@@ -124,3 +127,39 @@ flume + kafka
 /usr/local/hadoop/bin/yarn jar /usr/local/hbase/lib/hbase-server-2.2.6.jar org.apache.hadoop.hbase.mapreduce.ImportTsv -Dimporttsv.columns=HBASE_ROW_KEY,info:name,info:color fruit hdfs://node1:8020/input/hbasemr/fruit.csv
 /usr/local/hadoop/bin/yarn jar /root/jar_test/hbase_mapred-1.0-SNAPSHOT.jar hbase_mapred_1.JobMain
 /usr/local/hadoop/bin/yarn jar /root/jar_test/hbase_mapred-1.0-SNAPSHOT.jar hbase_mapred_2.JobMain2
+
+
+
+create temporary function my_len as "hive_udf.MyUDF";
+create temporary function my_explode as "hive_udtf.MyUDTF";
+
+create table gulivideo_orc_category(
+ videoId string, 
+ uploader string, 
+ age int, 
+ category string, 
+ length int, 
+ views int, 
+ rate float, 
+ ratings int, 
+ comments int,
+ relatedId array<string>)
+row format delimited fields terminated by "\t"
+collection items terminated by "&"
+stored as orc 
+tblproperties("orc.compress"="snappy");
+
+insert overwrite table gulivideo_orc_category 
+select
+ videoId, 
+ uploader, 
+ age, 
+ category_name, 
+ length, 
+ views, 
+ rate, 
+ ratings, 
+ comments,
+ relatedId 
+from gulivideo_orc 
+lateral view explode(category) tmp as category_name;

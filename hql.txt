@@ -1,0 +1,297 @@
+蚂蚁森林
+1.--------------------------------------------------------------
+select user_id,sum(low_carbon) sum_low_carbon
+from user_low_carbon 
+where date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM') < '2017-10'
+group by user_id;t1
+
+select low_carbon 
+from plant_carbon 
+where plant_id='p004';t2
+
+select low_carbon 
+from plant_carbon 
+where plant_id='p002';t3
+
+select user_id,floor((sum_low_carbon-t2.low_carbon)/t3.low_carbon) plant_count
+from ()t1,
+()t2,
+()t3;t4
+
+select user_id,plant_count,lead(plant_count,1,'9999-99-99') over(order by plant_count desc) lead_plant_count
+from (select user_id,floor((sum_low_carbon-t2.low_carbon)/t3.low_carbon) plant_count
+from ()t1,
+()t2,
+()t3)t4
+limit 10;t5
+
+select user_id,plant_count,(plant_count-lead_plant_count) plant_count_diff
+from (select user_id,plant_count,lead(plant_count,1,'9999-99-99') over(order by plant_count desc) lead_plant_count
+from ()t4
+order by plant_count desc
+limit 10)t5;
+
+2.1--------------------------------------------------------------
+select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100;t1
+
+select user_id,dt,
+lag(dt,2,'1970-01-01') over(partition by user_id order by dt) lag2,
+lag(dt,1,'1970-01-01') over(partition by user_id order by dt) lag1,
+lead(dt,1,'9999-99-99') over(partition by user_id order by dt) lead1,
+lead(dt,2,'9999-99-99') over(partition by user_id order by dt) lead2 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1;t2
+
+select user_id,dt,
+datediff(dt,lag2) lag2_diff,
+datediff(dt,lag1) lag1_diff,
+datediff(dt,lead1) lead1_diff,
+datediff(dt,lead2) lead2_diff 
+from (select user_id,dt,
+lag(dt,2,'1970-01-01') over(partition by user_id order by dt) lag2,
+lag(dt,1,'1970-01-01') over(partition by user_id order by dt) lag1,
+lead(dt,1,'9999-99-99') over(partition by user_id order by dt) lead1,
+lead(dt,2,'9999-99-99') over(partition by user_id order by dt) lead2 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2;t3
+
+select user_id,dt 
+from (select user_id,dt,
+datediff(dt,lag2) lag2_diff,
+datediff(dt,lag1) lag1_diff,
+datediff(dt,lead1) lead1_diff,
+datediff(dt,lead2) lead2_diff 
+from (select user_id,dt,
+lag(dt,2,'1970-01-01') over(partition by user_id order by dt) lag2,
+lag(dt,1,'1970-01-01') over(partition by user_id order by dt) lag1,
+lead(dt,1,'9999-99-99') over(partition by user_id order by dt) lead1,
+lead(dt,2,'9999-99-99') over(partition by user_id order by dt) lead2 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2)t3 
+where (lag2_diff=2 and lag1_diff=1) or (lag1_diff=1 and lead1_diff=-1) or (lead1_diff=-1 and lead2_diff=-2);t4
+
+select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt,low_carbon 
+from user_low_carbon;t5
+
+select t5.user_id,t5.dt,t5.low_carbon 
+from (select user_id,dt 
+from (select user_id,dt,
+datediff(dt,lag2) lag2_diff,
+datediff(dt,lag1) lag1_diff,
+datediff(dt,lead1) lead1_diff,
+datediff(dt,lead2) lead2_diff 
+from (select user_id,dt,
+lag(dt,2,'1970-01-01') over(partition by user_id order by dt) lag2,
+lag(dt,1,'1970-01-01') over(partition by user_id order by dt) lag1,
+lead(dt,1,'9999-99-99') over(partition by user_id order by dt) lead1,
+lead(dt,2,'9999-99-99') over(partition by user_id order by dt) lead2 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2)t3 
+where (lag2_diff=2 and lag1_diff=1) or (lag1_diff=1 and lead1_diff=-1) or (lead1_diff=-1 and lead2_diff=-2))t4 
+join (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt,low_carbon 
+from user_low_carbon)t5 
+on t4.user_id=t5.user_id and datediff(t4.dt,t5.dt)=0;t6
+
+2.2--------------------------------------------------------------
+select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100;
+
+select user_id, dt,
+rank() over(partition by user_id order by dt) rk 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1;t2
+
+select user_id,dt,
+date_sub(dt,rk) date_sub_rk 
+from (select user_id, dt,
+rank() over(partition by user_id order by dt) rk 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2;t3
+
+select user_id 
+from (select user_id,dt,
+date_sub(dt,rk) date_sub_rk 
+from (select user_id, dt,
+rank() over(partition by user_id order by dt) rk 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2)t3 
+group by user_id,date_sub_rk  
+having count(*)>=3;t4
+
+select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt,low_carbon 
+from user_low_carbon;t5
+
+select t5.user_id,t5.dt,t5.low_carbon 
+from (select user_id 
+from (select user_id,dt,
+date_sub(dt,rk) date_sub_rk 
+from (select user_id, dt,
+rank() over(partition by user_id order by dt) rk 
+from (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt 
+from user_low_carbon 
+where substring(date_dt,1,4)='2017' 
+group by user_id,date_dt 
+having sum(low_carbon) >= 100)t1)t2)t3 
+group by user_id,date_sub_rk  
+having count(*)>=3)t4 
+join (select user_id,date_format(regexp_replace(date_dt,'/','-'),'yyyy-MM-dd') dt,low_carbon 
+from user_low_carbon)t5 
+on t4.user_id=t5.user_id;t6
+
+案例
+2.--------------------------------------------------------------
+select category_name 
+from gulivideo_orc lateral view explode(category) tmp 
+as category_name;t1 
+
+select explode(category) category_name 
+from gulivideo_orc;t1
+
+select category_name,count(*) ct 
+from (select explode(category) category_name 
+from gulivideo_orc)t1  
+group by category_name 
+order by ct desc 
+limit 10;t2
+
+3.--------------------------------------------------------------
+select category,views 
+from gulivideo_orc 
+order by views desc 
+limit 20;t1
+
+select explode(category) category_name 
+from (select category,views 
+from gulivideo_orc 
+order by views desc 
+limit 20)t1;t2
+
+select category_name,count(*) ct 
+from (select explode(category) category_name 
+from (select category,views 
+from gulivideo_orc 
+order by views desc 
+limit 20)t1)t2 
+group by category_name;t3
+
+4.--------------------------------------------------------------
+select relatedid,views 
+from gulivideo_orc 
+order by views desc 
+limit 50;t1
+
+select explode(relatedid) vid 
+from (select relatedid,views 
+from gulivideo_orc 
+order by views desc 
+limit 50)t1;t2
+
+select g.category 
+from (select explode(relatedid) vid 
+from (select relatedid,views 
+from gulivideo_orc 
+order by views desc 
+limit 50)t1)t2 
+join gulivideo_orc g 
+on t2.vid=g.videoid;t3
+
+select explode(category) category_name 
+from (select g.category 
+from (select explode(relatedid) vid 
+from (select relatedid,views 
+from gulivideo_orc 
+order by views desc 
+limit 50)t1)t2 
+join gulivideo_orc g 
+on t2.vid=g.videoid)t3;t4
+
+select category_name,count(*) ct
+from (select explode(category) category_name 
+from (select g.category 
+from (select explode(relatedid) vid 
+from (select relatedid,views 
+from gulivideo_orc 
+order by views desc 
+limit 50)t1)t2 
+join gulivideo_orc g 
+on t2.vid=g.videoid)t3)t4 
+group by category_name 
+order by ct desc;t5
+
+5.--------------------------------------------------------------
+select videoid,views 
+from gulivideo_orc_category 
+where category='Music' 
+order by views desc 
+limit 10;
+
+6.--------------------------------------------------------------
+select category,videoid,views,rank() over(partition by category order by views desc) rk 
+from gulivideo_orc_category;t1
+
+select category,videoid,views 
+from (select category,videoid,views,rank() over(partition by category order by views desc) rk 
+from gulivideo_orc_category)t1 
+where rk <= 3;t2
+
+7.--------------------------------------------------------------
+select uploader 
+from gulivideo_user_orc 
+order by videos desc   
+limit 10;t1
+
+select t1.uploader,videoid,views 
+from (select uploader 
+from gulivideo_user_orc 
+order by videos desc   
+limit 10)t1 
+join gulivideo_orc g 
+on t1.uploader = g.uploader;t2
+
+select uploader,videoid,views,rank() over(partition by uploader order by views desc) rk 
+from (select t1.uploader,videoid,views 
+from (select uploader 
+from gulivideo_user_orc 
+order by videos desc   
+limit 10)t1 
+join gulivideo_orc g 
+on t1.uploader = g.uploader)t2;t3
+
+select uploader,videoid,views 
+from (select uploader,videoid,views,rank() over(partition by uploader order by views desc) rk 
+from (select t1.uploader,videoid,views 
+from (select uploader 
+from gulivideo_user_orc 
+order by videos desc   
+limit 10)t1 
+join gulivideo_orc g 
+on t1.uploader = g.uploader)t2)t3 
+where rk <= 20;t4
