@@ -18,16 +18,12 @@ hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
  
 
 hadoop.dll 下载
-killed map！内存不够
-Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. //
-Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases
 sparkalone-ha 搭建
-mapred --daemon start historyserver
 spark pom 依赖
-idea 远程提交
 kafka eagle
 kafka 自定义提交 offset
 tez
+hive+hbase
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
@@ -132,34 +128,3 @@ flume + kafka
 
 create temporary function my_len as "hive_udf.MyUDF";
 create temporary function my_explode as "hive_udtf.MyUDTF";
-
-create table gulivideo_orc_category(
- videoId string, 
- uploader string, 
- age int, 
- category string, 
- length int, 
- views int, 
- rate float, 
- ratings int, 
- comments int,
- relatedId array<string>)
-row format delimited fields terminated by "\t"
-collection items terminated by "&"
-stored as orc 
-tblproperties("orc.compress"="snappy");
-
-insert overwrite table gulivideo_orc_category 
-select
- videoId, 
- uploader, 
- age, 
- category_name, 
- length, 
- views, 
- rate, 
- ratings, 
- comments,
- relatedId 
-from gulivideo_orc 
-lateral view explode(category) tmp as category_name;

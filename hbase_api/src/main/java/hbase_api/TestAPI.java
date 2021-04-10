@@ -60,7 +60,16 @@ public class TestAPI {
                 newBuilder(TableName.valueOf(tableName)).
                 setColumnFamilies(cfList).build();
 
-        admin.createTable(tableDescriptor);
+        //预分区
+        byte[][] splitKeys = {
+                Bytes.toBytes("10"),
+                Bytes.toBytes("20"),
+                Bytes.toBytes("30"),
+                Bytes.toBytes("40"),
+                Bytes.toBytes("50")
+        };
+
+        admin.createTable(tableDescriptor, splitKeys);
     }
 
     private static void deleteTable(String tableName) throws IOException {
@@ -144,5 +153,6 @@ public class TestAPI {
 //        getData("student", "1001", "info", "name");
 //        scanData("student");
 //        deleteData("student", "1001", "info", "name");
+        createTable("staff4", "info1", "info2");
     }
 }

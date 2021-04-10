@@ -10,6 +10,9 @@ import org.apache.hadoop.io.Text;
 
 import java.io.IOException;
 
+/**
+ * 写入数据到 hbase
+ */
 public class FruitReducer extends TableReducer<LongWritable, Text, NullWritable> {
 
     private String cf = null;
