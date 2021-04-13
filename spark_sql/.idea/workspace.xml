@@ -5,16 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bef3070-3d5a-4d6a-8e71-5e009bcfbac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/src/main/java/constants/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/src/main/java/dao/HBaseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hbase_guliweibo/src/main/java/untils/HBaseUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input/udf.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_hive/Demo09_Hive.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_hive/Demo10_ThriftServer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo08_UDF.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/input/cscsc.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_operation/Demo04_Operation.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo01_Socket.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo02_Rate.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo03_File.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/structured_streaming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968550000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968550000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968555000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968555000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968560000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968560000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968565000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968565000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968570000.bk.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968570000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/._partitioner.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00001.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00002.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00003.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00004.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00005.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00006.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00007.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/_partitioner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00005" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00006" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/._partitioner.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00000.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00001.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00002.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00003.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00004.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00005.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00006.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00007.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/_partitioner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00004" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00005" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00006" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00007" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968550000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968550000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968555000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968555000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968560000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968560000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968565000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968565000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968570000" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968570000.bk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/receivedBlockMetadata/log-1617968548856-1617968608856" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,52 +126,13 @@
       <recent name="C:\MyProject\HadoopSpark\spark_sql" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo07_MovieTopN">
+  <component name="RunManager" selected="Application.Demo08_UDF">
     <configuration name="DataUtils" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="utils.Utils" />
       <module name="spark_sql" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo01_Data" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="spark_sql_type.Demo01_Data" />
-      <module name="spark_sql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark_sql_type.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo05_Query" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo05_Query" />
-      <module name="spark_sql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark_sql.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Demo06_WordCount" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo06_WordCount" />
-      <module name="spark_sql" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="spark_sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,13 +153,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Demo08_UDF" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo08_UDF" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_sql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo09_Hive" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_hive.Demo09_Hive" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_hive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo10_ThriftServer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_hive.Demo10_ThriftServer" />
+      <module name="spark_sql" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="spark_hive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo08_UDF" />
+        <item itemvalue="Application.Demo10_ThriftServer" />
+        <item itemvalue="Application.Demo09_Hive" />
         <item itemvalue="Application.Demo07_MovieTopN" />
         <item itemvalue="Application.DataUtils" />
-        <item itemvalue="Application.Demo01_Data" />
-        <item itemvalue="Application.Demo06_WordCount" />
-        <item itemvalue="Application.Demo05_Query" />
       </list>
     </recent_temporary>
   </component>

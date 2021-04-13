@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zookeeper_api" />
+        <module name="structured_streaming" />
       </profile>
     </annotationProcessing>
   </component>

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>spark_sql</groupId>
-    <artifactId>spark_sql</artifactId>
+    <groupId>structured_streaming</groupId>
+    <artifactId>structured_streaming</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -18,7 +18,6 @@
         <mysql.version>8.0.23</mysql.version>
         <scala.binary.version>2.12</scala.binary.version>
     </properties>
-
 
 
 
@@ -37,13 +36,6 @@
             <version>${spark.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive -->
-        <dependency>
-            <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive_2.12</artifactId>
-            <version>${spark.version}</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -51,24 +43,21 @@
             <version>${spark.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-hive-thriftserver -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming -->
         <dependency>
             <groupId>org.apache.spark</groupId>
-            <artifactId>spark-hive-thriftserver_2.12</artifactId>
+            <artifactId>spark-streaming_2.12</artifactId>
             <version>${spark.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql-kafka-0-10 -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql.version}</version>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql-kafka-0-10_2.12</artifactId>
+            <version>${spark.version}</version>
         </dependency>
 
     </dependencies>
-
-
-
 
 
     <build>

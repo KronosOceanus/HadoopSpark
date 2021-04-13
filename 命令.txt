@@ -1,11 +1,6 @@
 /usr/local/zookeeper/bin/zkServer.sh start
 /usr/local/hadoop/sbin/start-all.sh
 mapred --daemon start historyserver
-
-/usr/local/zookeeper/bin/zkServer.sh stop
-/usr/local/hadoop/sbin/stop-all.sh
-mapred --daemon stop historyserver
-
 /usr/local/zookeeper/bin/zkCli.sh -server node1:2181
 
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -write -nrFiles 10 -fileSize 10MB
@@ -15,6 +10,7 @@ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.
 hdfs oiv -i /usr/local/hadoop/data/namenodeData/current/fsimage_0000000000000153 -p XML -o my_fsimage.xml
 hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
 
+hive -e " select * from mytest.dept" | sed 's/[\t]/,/g'  > /root/data/hhd.csv
  
 
 hadoop.dll 下载
@@ -24,24 +20,22 @@ kafka eagle
 kafka 自定义提交 offset
 tez
 hive+hbase
+sqoop+hbase
+spark+hadoop native
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
 提取码：9bnr
 
-
+快照
+mvn -Pyarn -Phadoop-3.1 -Dhadoop.version=3.1.4 -Phadoop-provided -Phive -Phive-thriftserver -Pnetlib-lgpl -DskipTests clean package
+mysql jar 放入
 
 /usr/local/spark/sbin/start-all.sh
 /usr/local/spark/sbin/start-history-server.sh
 /usr/local/spark/bin/spark-shell --master spark://node1:7077
 /usr/local/spark/sbin/stop-all.sh
 /usr/local/spark/sbin/stop-history-server.sh
-
-val textFile = sc.textFile("hdfs://node1:8020/input/wordcount/wordcount.txt")
-val counts = textFile.flatMap(line => line.split(","))
-                 .map(word => (word, 1))
-                 .reduceByKey(_ + _)
-counts.saveAsTextFile("hdfs://node1:8020/output/wordcount_out2"
 
 val NUM_SAMPLES = 100000
 val count = sc.parallelize(1 to NUM_SAMPLES).filter { _ =>
@@ -53,6 +47,15 @@ println(s"Pi is roughly ${4.0 * count / NUM_SAMPLES}")
 
 /usr/local/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class org.apache.spark.examples.SparkPi /usr/local/spark/examples/jars/spark-examples_2.12-3.0.2.jar 10
 /usr/local/spark/bin/spark-submit --master yarn --deploy-mode cluster --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class spark_wordcount.WordCount /root/jar_test/spark_api-1.0-SNAPSHOT.jar hdfs://node1:8020/input/wordcount/wordcount.txt hdfs://node1:8020/output/wordcount_out3
+/usr/local/spark/bin/spark-submit --master yarn --deploy-mode client --driver-memory 512m --driver-cores 1 --executor-memory 512m --num-executors 2 --executor-cores 1 --class structured_streaming.Demo01_SourceSocket /root/jar_test/structured_streaming-1.0-SNAPSHOT.jar
+
+nohup /usr/local/hive/bin/hive --service metastore &
+/usr/local/spark/bin/spark-sql
+
+/usr/local/spark/sbin/start-thriftserver.sh --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.server2.thrift.bind.host=node3 --master local[*]
+/usr/local/spark/bin/beeline 
+!connect jdbc:hive2://node3:10000
+/usr/local/spark/sbin/stop-thriftserver.sh
 
 
 
@@ -106,10 +109,6 @@ flume + kafka
 
 
 
-/usr/local/sqoop/bin/sqoop list-databases --connect jdbc:mysql://localhost:3306/ --username root --password java521....
-
-
-
 /usr/local/hbase/bin/hbase-daemon.sh start master
 /usr/local/hbase/bin/hbase-daemon.sh start regionserver
 /usr/local/hbase/bin/hbase-daemon.sh stop master
@@ -128,3 +127,16 @@ flume + kafka
 
 create temporary function my_len as "hive_udf.MyUDF";
 create temporary function my_explode as "hive_udtf.MyUDTF";
+
+
+
+/usr/local/sqoop/bin/sqoop help
+/usr/local/sqoop/bin/sqoop list-databases --connect jdbc:mysql://node3:3306/ --username root --password java521....
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --target-dir /sqoop/company --delete-target-dir --num-mappers 1 --fields-terminated-by "\t"
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --target-dir /sqoop/company --delete-target-dir --num-mappers 1 --fields-terminated-by "\t" --columns id,sex
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --target-dir /sqoop/company --delete-target-dir --num-mappers 1 --fields-terminated-by "\t" --where "id=1"
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --target-dir /sqoop/company --delete-target-dir --num-mappers 1 --fields-terminated-by "\t" --query 'select name,sex from staff where id <= 1 and $CONDITIONS;'
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --num-mappers 1 --fields-terminated-by "\t" --hive-import --hive-overwrite --hive-table staff_hive
+/usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --num-mappers 1 --fields-terminated-by "\t" --columns "id,name,sex" --column-family "info" --hbase-create-table --hbase-row-key "id" --hbase-table "hbase_company" --split-by id
+/usr/local/sqoop/bin/sqoop export --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --num-mappers 1 --input-fields-terminated-by "\t" --export-dir /user/hive/warehouse/staff_hive
+/usr/local/sqoop/bin/sqoop --options-file /usr/local/sqoop/job/sqp.opt
