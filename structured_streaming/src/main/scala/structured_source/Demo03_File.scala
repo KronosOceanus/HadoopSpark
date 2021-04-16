@@ -24,7 +24,7 @@ object Demo03_File {
       .load("input")  //动态监控该文件夹下的文件
 
     df.writeStream
-      .format("console")  //输出到控制台
+      .format("console")
       .outputMode("append")
       .option("truncate", "false")  //不截断列
       .start()

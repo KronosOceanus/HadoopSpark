@@ -19,7 +19,7 @@ object Demo02_Rate {
       .load()
 
     df.writeStream
-      .format("console")  //输出到控制台
+      .format("console")
       .outputMode("append")
       .option("truncate", "false")  //不截断列
       .start()

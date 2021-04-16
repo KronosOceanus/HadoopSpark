@@ -23,7 +23,7 @@ object Demo06_WordCount {
     words.createOrReplaceTempView("t_words")
     words.show()
     println("----------------------")
-    val sql: String = "select count(*) as counts " +
+    val sql: String = "select value,count(*) as counts " +
       "from t_words " +
       "group by value " +
       "order by counts desc"

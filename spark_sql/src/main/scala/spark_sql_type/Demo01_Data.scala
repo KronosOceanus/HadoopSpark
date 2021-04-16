@@ -19,6 +19,7 @@ object Demo01_Data {
 
     val df1: DataFrame = ses.read.text("input/data.txt")
     val df2: DataFrame = ses.read.json("input/data.json")
+//    df1.dropDuplicates("value") //根据列名去重
 
     df2.write.mode(SaveMode.Overwrite).csv("output/data")
 

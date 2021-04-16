@@ -295,3 +295,107 @@ limit 10)t1
 join gulivideo_orc g 
 on t1.uploader = g.uploader)t2)t3 
 where rk <= 20;t4
+
+考试离线分析
+1.--------------------------------------------------------------
+select question_id,count(*) as frequency  
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 50;t1
+
+select subject_id,count(t_answer.question_id) as hot_question_count 
+from (select question_id,count(*) as frequency  
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 50)t1 
+join t_answer 
+on t1.question_id = t_answer.question_id 
+group by subject_id 
+order by hot_question_count desc;t2
+
+2.--------------------------------------------------------------
+select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20;t1
+
+select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id;t2
+
+select t2.recommendations 
+from (select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20)t1 
+join (select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id)t2
+on t1.question_id = t2.question_id;t3
+
+select explode(split(recommendations,',')) as question_id 
+from (select t2.recommendations 
+from (select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20)t1 
+join (select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id)t2 
+on t1.question_id = t2.question_id)t3;t4
+
+select question_id 
+from (select explode(split(recommendations,',')) as question_id 
+from (select t2.recommendations 
+from (select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20)t1 
+join (select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id)t2 
+on t1.question_id = t2.question_id)t3)t4 
+group by question_id;t5
+
+select t5.question_id, t_answer.subject_id 
+from (select question_id 
+from (select explode(split(recommendations,',')) as question_id 
+from (select t2.recommendations 
+from (select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20)t1 
+join (select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id)t2 
+on t1.question_id = t2.question_id)t3)t4 
+group by question_id)t5 
+join t_answer 
+on t5.question_id = t_answer.question_id;t6
+
+select subject_id,count(*) as r_count 
+from (select t5.question_id, t_answer.subject_id 
+from (select question_id 
+from (select explode(split(recommendations,',')) as question_id 
+from (select t2.recommendations 
+from (select question_id,count(*) as frequency 
+from t_answer 
+group by question_id 
+order by frequency desc 
+limit 20)t1 
+join (select question_id,first(recommendations) as recommendations 
+from t_answer 
+group by question_id)t2 
+on t1.question_id = t2.question_id)t3)t4 
+group by question_id)t5 
+join t_answer 
+on t5.question_id = t_answer.question_id)t6 
+group by subject_id 
+order by r_count desc;t7

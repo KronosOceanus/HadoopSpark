@@ -3,9 +3,6 @@ package structured_source
 import org.apache.spark.SparkContext
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
 
-/**
- *
- */
 object Demo01_Socket {
 
   def main(args: Array[String]): Unit = {
@@ -30,6 +27,7 @@ object Demo01_Socket {
     result.writeStream
       .format("console")  //输出到控制台
       .outputMode("complete") //必须有聚合操作
+      .option("checkpointLocation", "hdfs://node1:8020/checkpoint/socket")
       .start()
       .awaitTermination()
 

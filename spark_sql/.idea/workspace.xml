@@ -5,85 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bef3070-3d5a-4d6a-8e71-5e009bcfbac4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input/udf.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_hive/Demo09_Hive.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_hive/Demo10_ThriftServer.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo08_UDF.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/scala_compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/input/cscsc.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_operation/Demo04_Operation.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo01_Socket.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo02_Rate.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo03_File.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../structured_streaming/structured_streaming.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/output/question_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/spark_edu_analysis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/analysis/batch/BatchAnalysis.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/analysis/streaming/StreamingAnalysis.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/analysis/streaming/StreamingRecommend.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/bean/Answer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/bean/AnswerWithRecommendations.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/mock/KafkaProducerTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/mock/Simulator.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/model/ALSModeling.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../spark_edu_analysis/src/main/scala/edu/utils/RedisUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_dropduplicates/Demo11_DropDuplicates.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_sink/Demo05_Memory.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_sink/Demo06_ForeachBatch.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo09_Kafka.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_trigger/Demo08_Trigger.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_window/Demo10_EventTime_WaterMark.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/scala_compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/src/main/scala/kafka_etl/Kafka_ETL.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/src/main/scala/kafka_etl/Kafka_IOT.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/src/main/scala/kafka_producer/IotDatasProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/src/main/scala/kafka_producer/StationLogProducer.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../structured_streaming_kafka/structured_streaming_kafka.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kafka_api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_rdd/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_rdd/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968550000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968550000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968555000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968555000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968560000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968560000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968565000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968565000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968570000.bk.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/.checkpoint-1617968570000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/._partitioner.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00001.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00002.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00003.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00004.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00005.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00006.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/.part-00007.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/_partitioner" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00005" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-104/part-00007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/._partitioner.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00000.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00001.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00002.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00003.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00004.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00005.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00006.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/.part-00007.crc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/_partitioner" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00002" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00003" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00004" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00005" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00006" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/b4dd5413-74ca-45ef-b3fe-0b010acb130b/rdd-91/part-00007" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968550000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968550000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968555000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968555000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968560000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968560000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968565000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968565000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968570000" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/checkpoint-1617968570000.bk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../spark_streaming/checkpoint/receivedBlockMetadata/log-1617968548856-1617968608856" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo06_WordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/spark_sql/Demo06_WordCount.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo01_Data.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/spark_sql_type/Demo01_Data.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spark_sql/Demo06_WordCount$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spark_sql/Demo06_WordCount$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../spark_streaming_kafka/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_operation/Demo04_Operation.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_operation/Demo04_Operation.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo01_Socket.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo01_Socket.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo02_Rate.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo02_Rate.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo03_File.scala" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/src/main/scala/structured_source/Demo03_File.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/analysis/compile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/analysis/compile.relations" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/classes/structured_operation/Demo04_Operation$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/target/classes/structured_operation/Demo04_Operation$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/classes/structured_source/Demo01_Socket$.class" beforeDir="false" afterPath="$PROJECT_DIR$/../structured_streaming/target/classes/structured_source/Demo01_Socket$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../structured_streaming/target/structured_streaming-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../命令.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../命令.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,13 +111,13 @@
       <recent name="C:\MyProject\HadoopSpark\spark_sql" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Demo08_UDF">
-    <configuration name="DataUtils" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="utils.Utils" />
+  <component name="RunManager" selected="Application.Demo06_WordCount">
+    <configuration name="Demo06_WordCount" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="spark_sql.Demo06_WordCount" />
       <module name="spark_sql" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="utils.*" />
+          <option name="PATTERN" value="spark_sql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo06_WordCount" />
         <item itemvalue="Application.Demo08_UDF" />
         <item itemvalue="Application.Demo10_ThriftServer" />
         <item itemvalue="Application.Demo09_Hive" />
         <item itemvalue="Application.Demo07_MovieTopN" />
-        <item itemvalue="Application.DataUtils" />
       </list>
     </recent_temporary>
   </component>

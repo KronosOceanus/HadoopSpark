@@ -1,11 +1,11 @@
 package structured_operation
 
 import org.apache.spark.SparkContext
+import org.apache.spark.sql.streaming.StreamingQuery
 import org.apache.spark.sql.{DataFrame, Dataset, Row, SparkSession}
-import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
 
 /**
- *
+ * 阻塞？？？
  */
 object Demo04_Operation {
 
@@ -15,35 +15,41 @@ object Demo04_Operation {
     val sc: SparkContext = ses.sparkContext
     sc.setLogLevel("WARN")
 
-    val csvSchema: StructType = new StructType().add("value", StringType, nullable = true)
-
     val df: DataFrame = ses.readStream
-      .option("sep", ",")
-      .option("header", "false")
-      .schema(csvSchema)
-      .format("csv")
-      .load("input")  //动态监控该文件夹下的文件
+      .format("kafka")
+      .option("kafka.bootstrap.servers", "node1:9092,node2:9092,node3:9092")
+      .option("subscribe", "first")
+      .load()
 
     import ses.implicits._
-    val ds: Dataset[String] = df.as[String]
-    val result1: Dataset[Row] = ds.flatMap(_.split(","))
-      .groupBy('value)
+    val wordsDS: Dataset[String] = df
+      .selectExpr("CAST(value AS STRING)")
+      .as[String].flatMap(_.split(" "))
+    val result1: Dataset[Row] = wordsDS.groupBy('value)
       .count()
       .orderBy('count desc)
 
-    ds.createOrReplaceTempView("t_words")
-    val sql: String = "select count(*) as counts " +
+    wordsDS.createOrReplaceTempView("t_words")
+    val sql: String = "select value,count(*) as counts " +
       "from t_words " +
       "group by value " +
       "order by counts desc"
     val result2: DataFrame = ses.sql(sql)
 
-    result2.writeStream
+    val query1: StreamingQuery = result1.writeStream
       .format("console")
       .outputMode("complete")
+      .option("checkpointLocation", "hdfs://node1:8020/checkpoint/operation1")
       .start()
-      .awaitTermination()
+    val query2: StreamingQuery = result2.writeStream
+      .format("console")
+      .outputMode("complete")
+      .option("checkpointLocation", "hdfs://node1:8020/checkpoint/operation2")
+      .start()
 
+    ses.streams.awaitAnyTermination()
+
+    ses.close()
   }
 
 
