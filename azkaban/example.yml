@@ -1,0 +1,17 @@
+name: zhangsan
+age: 10
+gender: male
+
+- item1
+- item2
+- item3
+
+- name: zhangsan
+  age: 10
+  gender: male
+- name: zhangsan
+  age: 10
+  gender: male
+- name: zhangsan
+  age: 10
+  gender: male

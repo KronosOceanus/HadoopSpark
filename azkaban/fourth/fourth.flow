@@ -1,0 +1,35 @@
+nodes:
+  - name: jobA
+    type: command
+    config: 
+      command: echo "AAA"
+  - name: jobB
+    type: command
+    dependsOn: 
+      - jobA
+    config: 
+      command: echo "BBB"
+  - name: jobC
+    type: command
+    dependsOn: 
+      - jobB
+    config: 
+      command: echo "CCC"
+  - name: jobD
+    type: command
+    dependsOn: 
+      - jobC
+    config: 
+      command: echo "DDD"
+  - name: jobE
+    type: command
+    dependsOn: 
+      - jobD
+    config: 
+      command: echo "EEE"
+  - name: jobF
+    type: command
+    dependsOn: 
+      - jobE
+    config: 
+      command: echo "FFF"

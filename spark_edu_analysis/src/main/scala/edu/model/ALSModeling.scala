@@ -28,13 +28,12 @@ object ALSModeling {
     //2.加载数据并转换为:Dataset[Rating(学生id,问题id,推荐指数)]
     val path = "output/question_info.json"
     val answerInfoDF: Dataset[Rating] = spark.sparkContext.textFile(path)
-      .map(parseAnswerInfo)
+      .map(parseAnswerInfo) //将 json 转为评分矩阵
       .toDS()
       .cache()
 
     //3.划分数据集Array(80%训练集, 20%测试集)
     val randomSplits: Array[Dataset[Rating]] = answerInfoDF.randomSplit(Array(0.8, 0.2), 11L)
-
     //4.构建ALS模
     val als: ALS = new ALS()
       .setRank(20)//隐藏因子
@@ -43,21 +42,17 @@ object ALSModeling {
       .setUserCol("user")
       .setItemCol("product")
       .setRatingCol("rating")
-
     //5.使用训练集进行训练
     val model: ALSModel = als.fit(randomSplits(0).cache()).setColdStartStrategy("drop")
-
     //6.获得推荐
     val recommend: DataFrame = model.recommendForAllUsers(20)
-
     //7.对测试集进行预测
     val predictions: DataFrame = model.transform(randomSplits(1).cache())
-
     //8.使用RMSE(均方根误差)评估模型误差
     val evaluator: RegressionEvaluator = new RegressionEvaluator()
       .setMetricName("rmse")//均方根误差
       .setLabelCol("rating")
-      .setPredictionCol("prediction")
+      .setPredictionCol("prediction") //预测结果列名
     val rmse: Double = evaluator.evaluate(predictions)//均方根误差
 
     //9.输出结果

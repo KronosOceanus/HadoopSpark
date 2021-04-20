@@ -14,6 +14,7 @@ hive -e " select * from mytest.dept" | sed 's/[\t]/,/g'  > /root/data/hhd.csv
  
 
 hadoop.dll 下载
+hadoop-ha
 sparkalone-ha 搭建
 spark pom 依赖
 kafka eagle
@@ -21,12 +22,12 @@ tez
 hive+hbase
 sqoop+hbase
 structured streaming的groupby
-als 设置列名
+mllib als 设置列名
+azkaban
 
 尚硅谷大数据全套视频教程
 下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
 提取码：9bnr
-mvn -Pyarn -Phadoop-3.1 -Dhadoop.version=3.1.4 -Phadoop-provided -Phive -Phive-thriftserver -Pnetlib-lgpl -DskipTests clean package
 
 
 
@@ -53,12 +54,33 @@ redis-cli
 
 
 
+/usr/local/azkaban/azkaban-exec-server/bin/start-exec.sh
+/usr/local/azkaban/azkaban-exec-server/bin/shutdown-exec.sh
+curl -G "node1:12321/executor?action=activate" && echo
+curl -G "node2:12321/executor?action=activate" && echo
+curl -G "node3:12321/executor?action=activate" && echo
+/usr/local/azkaban/azkaban-web-server/bin/start-web.sh
+/usr/local/azkaban/azkaban-web-server/bin/shutdown-web.sh
+
+
+
+/usr/local/flink/bin/start-cluster.sh
+/usr/local/flink/bin/stop-cluster.sh
+/usr/local/flink/bin/historyserver.sh start
+/usr/local/flink/bin/historyserver.sh stop
+/usr/local/flink/bin/flink run /usr/local/flink/examples/batch/WordCount.jar --input /root/data/wordcount.txt --output /root/data/wordcount_out2
+/usr/local/flink/bin/yarn-session.sh -n 2 -tm 800 -s 1 -d
+yarn application -kill application_1618719179222_0006
+/usr/local/flink/bin/flink run -m yarn-cluster -yjm 1024 -ytm 1024 /usr/local/flink/examples/batch/WordCount.jar
+
+
 
 /usr/local/flume/bin/flume-ng agent --conf /usr/local/flume/conf --conf-file /usr/local/flume/job/netcat-flume-logger.conf --name a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/netcat-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/file-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/file-flume-hdfs.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/dir-flume-hdfs.conf -n a1
+/usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/netcat-flume-hdfs.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/files-flume-logger.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysource.conf -n a1 -Dflume.root.logger=INFO,console
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/mysink.conf -n a1 -Dflume.root.logger=INFO,console

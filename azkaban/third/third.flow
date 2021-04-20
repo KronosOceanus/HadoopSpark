@@ -1,0 +1,7 @@
+nodes:
+  - name: jobA
+    type: command
+    config: 
+      command: sh ./not_exists.sh
+      retries: 3
+      retry.backoff: 10000
