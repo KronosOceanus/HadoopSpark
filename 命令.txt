@@ -7,8 +7,8 @@ hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobc
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.1.4-tests.jar TestDFSIO -clean
 hadoop jar /usr/local/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.1.4.jar pi 2 10
 
-hdfs oiv -i /usr/local/hadoop/data/namenodeData/current/fsimage_0000000000000153 -p XML -o my_fsimage.xml
-hdfs oev -i edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
+hdfs oiv -i /usr/local/hadoop/tmp/dfs/name/current/fsimage_0000000000000585502 -p XML -o my_fsimage.xml
+hdfs oev -i /usr/local/hadoop/tmp/dfs/name/current/edits_0000000000000000001-0000000000000000153 -p XML -o myedits.xml
 
 hive -e " select * from mytest.dept" | sed 's/[\t]/,/g'  > /root/data/hhd.csv
  
@@ -24,10 +24,15 @@ sqoop+hbase
 structured streaming的groupby
 mllib als 设置列名
 azkaban
+hive 导出到 mysql
+/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper node1:2181,node2:2181,node3:2181 --topic _HOATLASOK --partitions 3 --replication-factor 3
+/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper node1:2181,node2:2181,node3:2181 --topic ATLAS_ENTITIES --partitions 3 --replication-factor 3
+/usr/local/atlas/bin/atlas_start.py
 
-尚硅谷大数据全套视频教程
-下载链接：https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg 
-提取码：9bnr
+
+https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg
+9bnr
+https://mp.weixin.qq.com/s/0mgy07WAMBYNBP6er8_hDA mst
 
 
 
@@ -61,6 +66,7 @@ curl -G "node2:12321/executor?action=activate" && echo
 curl -G "node3:12321/executor?action=activate" && echo
 /usr/local/azkaban/azkaban-web-server/bin/start-web.sh
 /usr/local/azkaban/azkaban-web-server/bin/shutdown-web.sh
+ozjzvddayzdgbeej
 
 
 
@@ -156,3 +162,11 @@ create temporary function my_explode as "hive_udtf.MyUDTF";
 /usr/local/sqoop/bin/sqoop import --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --num-mappers 1 --fields-terminated-by "\t" --columns "id,name,sex" --column-family "info" --hbase-create-table --hbase-row-key "id" --hbase-table "hbase_company" --split-by id
 /usr/local/sqoop/bin/sqoop export --connect jdbc:mysql://node3:3306/company --username root --password java521.... --table staff --num-mappers 1 --input-fields-terminated-by "\t" --export-dir /user/hive/warehouse/staff_hive
 /usr/local/sqoop/bin/sqoop --options-file /usr/local/sqoop/job/sqp.opt
+
+
+
+/usr/local/solr/bin/solr start
+/usr/local/solr/bin/solr create -c vertex_index -d /usr/local/solr/atlas_conf -shards 3 -replicationFactor 2
+/usr/local/solr/bin/solr create -c edge_index -d /usr/local/solr/atlas_conf -shards 3 -replicationFactor 2
+/usr/local/solr/bin/solr create -c fulltext_index -d /usr/local/solr/atlas_conf -shards 3 -replicationFactor 2
+/usr/local/solr/bin/solr delete -c vertex_index

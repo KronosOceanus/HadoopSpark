@@ -1,0 +1,7 @@
+nodes:
+  - name: jobA
+    type: javaprocess
+    config: 
+      Xms: 96M
+      Xmx: 200M
+      java.class: azkaban_api.TestJavaProcess

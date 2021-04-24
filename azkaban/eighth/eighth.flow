@@ -1,0 +1,5 @@
+nodes:
+  - name: jobA
+    type: command
+    config:
+      command: sh /root/reshell/clusterconfig.sh update

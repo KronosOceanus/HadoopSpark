@@ -1,0 +1,12 @@
+nodes:
+  - name: jobA
+    type: command
+    config: 
+      command: sh jobA.sh
+  - name: jobB
+    type: command
+    dependsOn:
+      - jobA
+    config: 
+      command: sh jobB.sh
+    condition: ${jobA:wk} == 3
