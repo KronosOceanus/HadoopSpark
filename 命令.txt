@@ -30,6 +30,7 @@ hive 导出到 mysql
 /usr/local/atlas/bin/atlas_start.py
 
 
+
 https://pan.baidu.com/s/18Feqa_63640xPB0fYJ8Ttg
 9bnr
 https://mp.weixin.qq.com/s/0mgy07WAMBYNBP6er8_hDA mst
@@ -78,6 +79,7 @@ ozjzvddayzdgbeej
 /usr/local/flink/bin/yarn-session.sh -n 2 -tm 800 -s 1 -d
 yarn application -kill application_1618719179222_0006
 /usr/local/flink/bin/flink run -m yarn-cluster -yjm 1024 -ytm 1024 /usr/local/flink/examples/batch/WordCount.jar
+/usr/local/flink/bin/flink run -m yarn-cluster -yjm 1024 -ytm 1024 -c flink_api.WordCount3_Yarn /root/jar_test/flink_api-1.0-SNAPSHOT.jar --output hdfs://node1:8020/output/flink_wordcount_output
 
 
 
@@ -114,7 +116,6 @@ group5（a2,node1）（a3,node2）（a1,node3）
 flume + kafka
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/flume-kafka.conf -n a1
 /usr/local/flume/bin/flume-ng agent -c /usr/local/flume/conf -f /usr/local/flume/job/type-kafka.conf -n a1
-
 
 
 
