@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mapreduce_api" />
+        <module name="spark_mllib" />
       </profile>
     </annotationProcessing>
   </component>
