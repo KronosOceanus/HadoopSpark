@@ -1,0 +1,11 @@
+生成数据的日期再 application.properties 文件设置
+applog.sh 生成日志到 /opt/module/applog/logs，jar 必须在配置文件 application.properties 目录下执行
+flume.sh 采集日志数据，传输到 kafka topic_log
+单独使用 flume，kafka-hdfs.conf 传输 kafka topic_log 数据到 hdfs
+
+cd /opt/module/db_log && java -jar gmall2020-mock-db-2020-05-18.jar 生成业务数据并写入 mysql
+mysql_to_hdfs.sh 使用 sqoop 导入业务数据到 hdfs
+
+测试任务提交到 default 队列，所有调度任务提交到 hive 队列
+
+clusterconfig.sh

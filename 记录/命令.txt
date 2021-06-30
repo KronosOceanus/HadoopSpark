@@ -121,7 +121,7 @@ flume + kafka
 /usr/local/kafka/bin/kafka-server-start.sh -daemon /usr/local/kafka/config/server.properties
 /usr/local/kafka/bin/kafka-server-stop.sh /usr/local/kafka/config/server.properties
 /usr/local/kafka/bin/kafka-topics.sh --list --zookeeper node1:2181
-/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper node1:2181 --topic first --partitions 2 --replication-factor 2
+/usr/local/kafka/bin/kafka-topics.sh --create --zookeeper node1:2181 --topic first --partitions 3 --replication-factor 3
 /usr/local/kafka/bin/kafka-topics.sh --delete --zookeeper node1:2181 --topic first
 /usr/local/kafka/bin/kafka-topics.sh --describe --zookeeper node1:2181 --topic second
 /usr/local/kafka/bin/kafka-console-producer.sh --topic first --broker-list node1:9092

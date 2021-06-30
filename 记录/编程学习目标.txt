@@ -1,0 +1,21 @@
+语言：java，python，scala
+内功：数据结构（leetcode），计网，操作系统，jvm，并发，机器学习（kaggle）
+数据库：mysql，redis
+工具：maven，git
+框架：SSM/boot/cloud + vue，hadoop/spark/flink
+服务器：linux，jvm
+
+主要：
+spark
+数据仓库，实时处理
+面试题（大数据）
+
+
+次要：
+hadoop，flink，spring boot
+网站，数据可视化
+tf实战，kaggle实战
+
+MusicHub网站
+音乐风格特征提取/识谱/作曲/分辨音色
+NLPAI
